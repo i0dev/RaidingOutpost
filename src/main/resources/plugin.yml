@@ -1,0 +1,28 @@
+name: ${project.build.finalName}
+main: com.i0dev.RaidingOutpost.Heart
+version: ${project.version}
+author: i01
+description: A outpost that you can raid for epic rewards.
+website: ${project.url}
+softdepend:
+  - PlaceHolderAPI
+  - Multiverse-Core
+depend:
+  - Factions
+  - NBTAPI
+  - WorldEdit
+commands:
+  RaidingOutpost:
+    aliases:
+      - rpost
+      - rp
+      - raidingpost
+    description: The main command
+    usage: /RaidingOutpost <help/reload>
+permissions:
+  raidingoutpost.reload.cmd:
+    description: Reload config
+    default: op
+  raidingoutpost.help.cmd:
+    description: Help Page
+    default: op
